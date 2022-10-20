@@ -1,0 +1,405 @@
+/************************
+    table of contect
+*************************/
+/* 
+1 global
+2 header
+3 about me
+4 portfolio
+5 numbers
+6 my work
+7 contact
+8 footer
+*/
+
+
+
+
+
+/************************
+    GLOBAL
+*************************/
+html {
+    box-sizing: border-box;
+} 
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    scroll-behavior: smooth;
+}
+*{
+    color: #666;
+    /* font-family: Lato,Tajawal,sans-serif; */
+}
+ul{
+    list-style: none;
+}
+li{
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+}
+.right{
+    float: right;
+}
+h1{
+    margin: 20px 0;
+    padding: 10px;
+}
+h4, p{
+    font-weight: normal;
+    line-height: 25px;
+    letter-spacing: 1.5px;
+    padding: 15px 20px;
+}
+p {
+    font-weight: normal;
+    line-height: 25px;
+    letter-spacing: 1.5px;
+    padding: 15px 5px;
+}
+.fa-solid{
+    margin-right: 6px;
+    transition: .7s ease;
+}
+
+/************************
+    HEADER 
+*************************/
+
+.header{
+    background-image: url("https://www.w3schools.com/w3images/parallax1.jpg");
+    min-height: 400px;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+    position: relative;
+}
+
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 35px;
+}
+
+.nav-menu{
+    flex-grow: 1;
+}
+
+.nav-branding,
+.nav-item, 
+.nav-link{
+    padding: 0 8px;
+    color: #222;
+    line-height: 2;
+}
+
+.nav-link{
+    transition: .7s ease;
+    display: block;
+    width: 100%;
+}
+.nav-link:hover{
+    background-color: #777;
+    color: #000;
+}
+.nav-link:hover .fa-solid {
+    color: #000;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    font-size: 18px;
+    --webkit-transition: all .3s ease-in-out
+}
+
+.hero-text{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.hero-text::after{
+    content: "MY WEBSITE LOGO";
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    letter-spacing: 3px;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+/************************
+    ABOUT ME 
+*************************/
+
+#about-me{
+    margin: 100px 0;
+    text-align: center;
+    padding: 20px;
+}
+.both{
+    margin: 30px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+}
+.r-side, .l-side{
+    width: 50%;
+    margin: 0 20px;
+}
+.r-side h3{
+    margin: 25px 5px;
+    font-weight: normal;
+}
+.r-side img{
+    width: 400px;
+    height: 260px;
+    opacity: 0.7;
+}
+.l-side{
+    text-align: left;
+    line-height: 25px;
+    letter-spacing: 1.5px;
+}
+.skills{
+    margin: 20px 80px;
+    padding: 15px 0;
+}
+.skills p{
+    text-align: left;
+}
+
+.skill-container{
+    background-color: #e2e2e2;
+    margin: 10px 5px;
+}
+.percent{
+    background-color:#616161;
+    color: #fff;
+    padding: 8px 0;
+    font-size: 15px;
+    text-align: center;
+}
+
+.one::after{ content: "95%";}
+.one{ width: 95%;}
+
+.two::after{ content: "80%";}
+.two{ width: 80%;}
+
+.three::after{ content: "75%";}
+.three{ width: 75%;}
+
+
+
+/************************
+    Numbers 
+*************************/
+
+.numbers{
+    background-color: #616161;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.num h4, .num p{
+    color: #fff;
+    padding: 10px 10px 8px;
+    font-size: 20px;
+}
+
+/************************
+    portfolio
+*************************/
+
+#portfolio{
+    background-image: url("https://www.w3schools.com/w3images/parallax2.jpg");
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+      position: relative;
+
+}
+#portfolio h2{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 20px;
+}
+
+/************************
+    My Work
+*************************/
+.my-work{
+    margin: 100px 0;
+    text-align: center;
+    padding: 20px;
+}
+.imgs{
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center
+}
+.imgs img{
+    margin: 10px;
+    height: 150px;
+    width: 200px;
+}
+.work-btn{
+    all: unset;
+    margin: 50px 0;
+    padding: 20px 35px;
+    letter-spacing: 1.5px;
+    color: #000;
+    background-color: rgba(196, 196, 196, 0.74);
+    border: 1px solid rgba(196, 196, 196, 0.74);
+}
+.work-btn:hover{
+    background-color: rgb(196, 196, 196);
+    border: 1px solid rgb(196, 196, 196);
+}
+
+
+/************************
+    contact-img
+*************************/
+
+#contact-img{
+    background-image: url("https://www.w3schools.com/w3images/parallax3.jpg");
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+    position: relative;
+
+}
+#contact-img h2{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 20px;
+}
+
+/**************
+    contact
+***************/
+
+.contact{
+    text-align: center;
+    width: 80%;
+    margin: 50px auto;
+}
+
+.contact .both .r-side{
+    height: 40%;
+    width: 40%;
+    margin: 30px 0 0;
+}
+.contact .both .l-side{
+    margin: 0;
+    padding: 5px;
+}
+.contact .both .info{
+    padding: 20px 5px;
+    line-height: 30px;
+    
+}
+.contact .both .info li{
+    display: block;
+}
+form{
+    padding: 10px 0;
+    width: 100%;
+}
+input{
+    display: inline-block;
+    width: 49%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+textarea{
+    width: 100%;
+    padding: 10px;
+}
+.send-btn{
+    all: unset;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 23px;
+    margin: 10px 0;
+    float: right;
+}
+.send-btn:hover{
+    background-color: #ccc;
+    color: #000;
+}
+.fa-paper-plane{
+    color: #fff;
+}
+.send-btn:hover .fa-paper-plane{
+    color: #000;
+}
+
+/************************
+    footer
+*************************/
+
+footer{
+    background-color: #616161;
+    text-align: center;
+    padding: 50px;
+}
+footer:hover{
+    background-color: #000;
+}
+.top-btn{
+    all: unset;
+    margin: 10px 0;
+    padding: 15px;
+    letter-spacing: 1px;
+    background-color: #f1f1f1;
+}
+.top-btn:hover{
+    background-color: rgb(214, 211, 211);
+}
+.fa-brands{
+    color: #fff;
+    /* padding: 5px; */
+    font-size: 20px;
+    margin-top: 15px;
+    margin-right: 3px;
+}
+.fa-brands:hover{
+    color: #9b9898;
+}

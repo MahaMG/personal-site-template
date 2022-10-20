@@ -1,0 +1,106 @@
+/**************** 
+    HEADER
+****************/
+
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger{
+    display: block;
+}
+
+.hamburger.active .bar:nth-child(2){
+    opacity: 0;
+}
+
+.nav-menu{
+    position: fixed;
+    left: -100%;
+    top: 36px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    transition: .3s;
+    z-index: 4;
+}
+
+.nav-item{
+    margin: 16px 0;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link{
+    display: block;
+    padding: 8px;
+    color: #000;
+}
+
+.nav-menu.active{
+    left: 0;
+}
+
+.hero-text::after {
+    content: "MY LOGO";
+}
+
+/*****************
+    ABOUT ME
+*****************/
+
+#about-me .both{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-me .both .l-side{
+    /* text-align: center;
+    margin-top: 20px; */
+    display: none;
+}
+
+/************************
+    Numbers 
+*************************/
+
+.numbers {
+    flex-direction: column;
+    gap: 25px;
+}
+
+.num h4,
+.num p {
+    color: #fff;
+    padding: 5px 5px 20px;
+    font-size: 20px;
+}
+
+/*****************
+    CONTACT
+*****************/
+
+.contact .both{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .both .r-side {
+    height: 40%;
+    width: 40%;
+    margin: 0 0 30px;
+}
+
+input {
+    width: 100%;
+}
+
+.send-btn {
+    float: none;
+    width: 85%;
+    text-align: center;
+}
